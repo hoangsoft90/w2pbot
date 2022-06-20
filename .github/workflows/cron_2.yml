@@ -1,4 +1,4 @@
-name: Report (every hour)
+name: Find shops (every hour)
 
 on:
   schedule:
@@ -28,5 +28,5 @@ jobs:
       if: success()
       run: |
         docker run \
-        -e JOB_NAME="report" \
+        -e JOB_NAME="find_shops" \
         ghcr.io/hoangweb/w2pbot:latest
